@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="">
+	<sql id="sql">
+		select id,userName,password,email,userType from news_user
+	</sql>
+	<insert id="seve"  parameterType="news_user">
+	insert into News_user values(id,#{userName},#{password},#{email},#{userType})
+	</insert>
+	<select id="login" parameterType="News_user" resultType="news_user">
+		select id,userName,password from news_user where userName=#{userName};
+	 </select>
+	<delete id="user_dele" parameterType="topic" >
+		delete from topic where tid = #{tid};
+	</delete>
+	<update id="user_upda" parameterType="topic">
+		UPDATE topic SET tname=#{tname}  WHERE tid=#{tid}"
+	</update>
+</mapper>

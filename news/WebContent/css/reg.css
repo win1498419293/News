@@ -1,0 +1,6 @@
+@CHARSET "UTF-8";
+body{ margin:0px; padding:0px; border:0px;}
+#nav{ margin:0px auto; width:781px; height:69px;}
+fieldset{ margin:0px auto; width:500px; height:300px;}
+ul{list-style:none; clear:both;}
+li{ float:left; font-size:12px; line-height:30px;}
